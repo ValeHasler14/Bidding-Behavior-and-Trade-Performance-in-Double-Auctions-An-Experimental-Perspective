@@ -1,7 +1,7 @@
 #Split by Side, Valuation and Game
 #Reading the Data set
 
-Data <- read.csv("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Data Set\\Bachelorarbeit\\Data.csv")
+Data <- read.csv("path")
 
 #Download the necessary libraries
 
@@ -11,7 +11,7 @@ library(tidyverse)
 #__________________________________________________________________________________________________________________________________________________________________________________
 
 
-pdf("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Plots PDF\\Plots_SPlit_useless.pdf")
+pdf("path")
 
 #Adding Gain of Profit as a Column
 
