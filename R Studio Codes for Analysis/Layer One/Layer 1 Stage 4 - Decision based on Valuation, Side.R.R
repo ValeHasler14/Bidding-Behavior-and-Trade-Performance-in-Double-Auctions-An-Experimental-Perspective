@@ -1,5 +1,3 @@
-#This code solely creates the data sets. 
-
 #As these Codes have been created before the naming of the Categories (Later named as Groups) are as follows:
 
 #C1 == Seller Bad
