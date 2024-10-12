@@ -1,6 +1,6 @@
 #Reading the Data set
 
-Data <- read.csv("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Data Set\\Bachelorarbeit\\Data.csv")
+Data <- read.csv("path")
 
 #Download the necessary libraries
 
@@ -9,7 +9,7 @@ library(tidyverse)
 #Section: Data Set Preparation
 #__________________________________________________________________________________________________________________________________________________________________________________
 
-pdf("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Plots PDF\\Finalstages\\Plots_Stage_4.pdf")
+pdf("path")
 
 #Adding Gain of Profit as a Column
 
@@ -704,7 +704,7 @@ Data_Buyer_Good <- Data_Buyer_Good %>% select(-Valuation_groups)
 
 dev.off()
 
-sink("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Summaries\\model_summaries_Stage_4.txt")
+sink("path")
 
 summary(model_Q_A_Buyer_bad)
 summary(model_Q_A_Buyer_Good)
