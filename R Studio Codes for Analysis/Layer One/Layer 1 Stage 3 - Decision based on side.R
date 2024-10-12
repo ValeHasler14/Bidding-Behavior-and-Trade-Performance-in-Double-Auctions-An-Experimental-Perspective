@@ -1,6 +1,6 @@
 #Reading the Data set
 
-Data <- read.csv("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Data Set\\Bachelorarbeit\\Data.csv")
+Data <- read.csv("path")
 
 #Download the necessary libraries
 
@@ -13,7 +13,7 @@ library(tidyverse)
 
 #creation of a PDF, containing the generated plots
 
-pdf("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Plots PDF\\Plots_SPlit_2.pdf")
+pdf("path")
 
 #Adding Gain of Profit as a Column
 
@@ -502,11 +502,8 @@ ggplot(Data_for_Regression_Buyer, aes(x = Aggression, y = GOP_B)) + geom_point(a
 
 
 
-#############################################################################################
-
 ################################Section :Clean Up ###########################################
 
-#############################################################################################
 
 
 
@@ -523,7 +520,7 @@ Data_Buyer <- Data_Buyer %>% relocate(Match_price,.after = match_time)
 #done
 
 dev.off()
-sink("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Summaries\\model_summaries_Split_2.txt")
+sink("path")
 
 summary(model_Activeness_Buyer)
 summary(model_Activeness_Seller)
