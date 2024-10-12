@@ -753,7 +753,7 @@ Data_Buyer_Good <- Data_Buyer_Good %>% select(-Valuation_groups, -Max_Bid, -Min_
 
 dev.off()
 
-sink("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Summaries\\model_summaries_Split_0.txt")
+sink("path")
 
 summary(model_FlexibleBuyer_Good)
 summary(model_Flexible_Buyer_bad)
