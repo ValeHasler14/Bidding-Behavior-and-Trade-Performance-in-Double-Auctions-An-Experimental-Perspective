@@ -14,7 +14,7 @@
 
 
 
-Data <- read.csv("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Data Set\\Bachelorarbeit\\Data.csv")
+Data <- read.csv("path")
 
 #Download the necessary libraries
 
@@ -27,7 +27,7 @@ library(tidyverse)
 
 #creation of a PDF, containing the generated plots
 
-pdf("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Plots PDF\\Plots_SPlit_useless.pdf")
+pdf("path")
 
 #Adding Gain of Profit as a column
 
