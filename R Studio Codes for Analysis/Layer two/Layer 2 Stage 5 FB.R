@@ -6,13 +6,8 @@ Data <- read.csv("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Data Set\\Bachel
 
 library(tidyverse)
 
-#############################################################################################
-
-###############################Section: Data Set Preparation################################# 
-
-#############################################################################################
-
-pdf("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Plots PDF\\Finalstages\\Plots_Stage_5_Full_OB.pdf")
+#creating the PDF
+pdf("path")
 
 
 
@@ -381,7 +376,7 @@ ggplot(Data_for_Regression_Buyer_Good_Full_OB, aes(x = Quick_and_soft, y = GOP_B
 
 dev.off()
 
-sink("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Summaries\\model_summaries_Stage_5_Full_OB.txt")
+sink("path")
 
 summary(model_Q_A_Buyer_bad_Full_OB)
 summary(model_Q_A_Buyer_Good_Full_OB)
