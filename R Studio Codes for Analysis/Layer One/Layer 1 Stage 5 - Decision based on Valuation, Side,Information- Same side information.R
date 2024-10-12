@@ -2,9 +2,18 @@
 
 #Logistic Regressions______________________________________________________________________________________________________________________________________________________________
 
-
-
 #Same C1-C8
+
+#As these Codes have been created before the naming of the Categories (Later named as Groups) are as follows:
+
+#C1 == Seller Bad
+#C2 == Seller Medium Low
+#C3 == Seller Medium High
+#C4 == Seller Good
+#C5 == Buyer Bad
+#C6 == Buyer Medium Low
+#C7 == Buyer Medium High
+#C8 == Buyer Good
 
 
 pdf("path")
