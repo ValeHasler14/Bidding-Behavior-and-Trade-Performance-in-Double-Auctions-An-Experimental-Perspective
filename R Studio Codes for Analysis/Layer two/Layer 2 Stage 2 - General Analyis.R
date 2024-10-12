@@ -1,6 +1,6 @@
 #Reading the Data set
 
-Data <- read.csv("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Data Set\\Bachelorarbeit\\Data.csv")
+Data <- read.csv("path")
 
 #Download the necessary libraries
 
@@ -12,7 +12,7 @@ library(tidyverse)
 #creation of a PDF, containing the generated plots
 
 
-pdf("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Plots PDF\\Finalstages\\Plots_Stage_2.pdf")
+pdf("path")
 
 #Adding Gain of Profit as a column
 
@@ -272,7 +272,7 @@ ggplot(Data_for_Regression, aes(x = Quick_and_soft, y = GOP_B)) + geom_point(aes
 
 dev.off()
 
-sink("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Summaries\\model_summaries_Stage_2.txt")
+sink("path")
 
 summary(model_Q_A)
 
