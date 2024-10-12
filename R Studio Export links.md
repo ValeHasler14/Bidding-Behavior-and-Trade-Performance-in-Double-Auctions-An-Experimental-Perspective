@@ -26,10 +26,12 @@ Stage 3:                                        [Plots Layer 2 Stage_3.pdf](http
 Stage 4:                                        [Plots Layer 2 Stage_4.pdf](https://github.com/user-attachments/files/17351212/Plots.Layer.2.Stage_4.pdf)
 
 
-Stage 5:        "Same Side Information" :       [Plots Layer 2 Stage_5_Same.pdf](https://github.com/user-attachments/files/17351216/Plots.Layer.2.Stage_5_Same.pdf)
+Stage 5: 
 
-                "Other Side Information":       [Plots Layer 2 Stage_5_Other.pdf](https://github.com/user-attachments/files/17351215/Plots.Layer.2.Stage_5_Other.pdf)
+"Same Side Information" :       [Plots Layer 2 Stage_5_Same.pdf](https://github.com/user-attachments/files/17351216/Plots.Layer.2.Stage_5_Same.pdf)
 
-                "Full Orderbook Information":   [Plots Layer 2 Stage_5_Full_OB.pdf](https://github.com/user-attachments/files/17351214/Plots.Layer.2.Stage_5_Full_OB.pdf)
+"Other Side Information":       [Plots Layer 2 Stage_5_Other.pdf](https://github.com/user-attachments/files/17351215/Plots.Layer.2.Stage_5_Other.pdf)
 
-                "Blackbox":                     [Plots Layer 2 Stage_5_BB.pdf](https://github.com/user-attachments/files/17351213/Plots.Layer.2.Stage_5_BB.pdf)
+"Full Orderbook Information":   [Plots Layer 2 Stage_5_Full_OB.pdf](https://github.com/user-attachments/files/17351214/Plots.Layer.2.Stage_5_Full_OB.pdf)
+
+"Blackbox":                     [Plots Layer 2 Stage_5_BB.pdf](https://github.com/user-attachments/files/17351213/Plots.Layer.2.Stage_5_BB.pdf)
