@@ -1,15 +1,11 @@
-#############################################################################################
-
-###############################Section: Logistic Regressions################################# 
-
-#############################################################################################
+#Logistic Regressions______________________________________________________________________________________________________________________________________________________________
 
 #Full_OB C1-C8
 
 
-pdf("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Plots PDF\\Plots_SPlit_4_Full_OB.pdf")
+pdf("path")
 
-##First Test for Patience C1
+#Test for Patience C1
 
 Data_for_Regression_C1 <- Data_C1_Full_OB[!is.na(Data_C1_Full_OB$GOP_B), ]
 
@@ -28,9 +24,9 @@ ggplot(Data_for_Regression_C1, aes(x = Patience, y = GOP_B)) + geom_point(aes(co
                                                                                                                                                                                       x = "Patience",
                                                                                                                                                                                       y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
-################
 
-##First Test for Patience C2
+
+#Test for Patience C2
 
 
 Data_for_Regression_C2 <- Data_C2_Full_OB[!is.na(Data_C2_Full_OB$GOP_B), ]
@@ -51,9 +47,9 @@ ggplot(Data_for_Regression_C2, aes(x = Patience, y = GOP_B)) + geom_point(aes(co
                                                                                                                                                                                       y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
 
-################
 
-##First Test for Patience C3
+
+#Test for Patience C3
 
 
 Data_for_Regression_C3 <- Data_C3_Full_OB[!is.na(Data_C3_Full_OB$GOP_B), ]
@@ -74,9 +70,8 @@ ggplot(Data_for_Regression_C3, aes(x = Patience, y = GOP_B)) + geom_point(aes(co
                                                                                                                                                                                       y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
 
-################
 
-##First Test for Patience C4
+#Test for Patience C4
 
 
 Data_for_Regression_C4 <- Data_C4_Full_OB[!is.na(Data_C4_Full_OB$GOP_B), ]
@@ -97,9 +92,7 @@ ggplot(Data_for_Regression_C4, aes(x = Patience, y = GOP_B)) + geom_point(aes(co
                                                                                                                                                                                       y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
 
-################
-
-##First Test for Patience C5
+#Test for Patience C5
 
 
 Data_for_Regression_C5 <- Data_C5_Full_OB[!is.na(Data_C5_Full_OB$GOP_B), ]
@@ -118,9 +111,9 @@ Data_for_Regression_C5$predicted_prob <- predict(model_Patience_C5, type = "resp
 ggplot(Data_for_Regression_C5, aes(x = Patience, y = GOP_B)) + geom_point(aes(color = factor(GOP_B)), size = 3) + geom_line(aes(y = predicted_prob), color = "blue", size = 1) + labs(title = "Logistic Regression of GOP on Patience (C5_Full_OB)",
                                                                                                                                                                                       x = "Patience",
                                                                                                                                                                                       y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
-################
 
-##First Test for Patience C6
+
+#Test for Patience C6
 
 
 Data_for_Regression_C6 <- Data_C6_Full_OB[!is.na(Data_C6_Full_OB$GOP_B), ]
@@ -141,7 +134,7 @@ ggplot(Data_for_Regression_C6, aes(x = Patience, y = GOP_B)) + geom_point(aes(co
                                                                                                                                                                                       y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
 
-##First Test for Patience C7
+#Test for Patience C7
 
 
 Data_for_Regression_C7 <- Data_C7_Full_OB[!is.na(Data_C7_Full_OB$GOP_B), ]
@@ -161,7 +154,7 @@ ggplot(Data_for_Regression_C7, aes(x = Patience, y = GOP_B)) + geom_point(aes(co
                                                                                                                                                                                       x = "Patience",
                                                                                                                                                                                       y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
-##First Test for Patience C8
+#Test for Patience C8
 
 
 Data_for_Regression_C8 <- Data_C8_Full_OB[!is.na(Data_C8_Full_OB$GOP_B), ]
@@ -183,9 +176,9 @@ ggplot(Data_for_Regression_C8, aes(x = Patience, y = GOP_B)) + geom_point(aes(co
 
 
 
-#############################################################################################
 
-#First Test for Activeness_C1
+
+#Test for Activeness_C1
 
 Data_for_Regression_C1 <- Data_C1_Full_OB[!is.na(Data_C1_Full_OB$GOP_B), ]
 
@@ -205,9 +198,9 @@ ggplot(Data_for_Regression_C1, aes(x = Activeness, y = GOP_B)) + geom_point(aes(
                                                                                                                                                                                           x = "Activeness",
                                                                                                                                                                                           y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
-##########
 
-#First Test for Activeness_C2
+
+#Test for Activeness_C2
 
 Data_for_Regression_C2 <- Data_C2_Full_OB[!is.na(Data_C2_Full_OB$GOP_B), ]
 
@@ -227,9 +220,9 @@ ggplot(Data_for_Regression_C2, aes(x = Activeness, y = GOP_B)) + geom_point(aes(
                                                                                                                                                                                           y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
 
-##########
 
-#First Test for Activeness_C3
+
+#Test for Activeness_C3
 
 Data_for_Regression_C3 <- Data_C3_Full_OB[!is.na(Data_C3_Full_OB$GOP_B), ]
 
@@ -249,12 +242,7 @@ ggplot(Data_for_Regression_C3, aes(x = Activeness, y = GOP_B)) + geom_point(aes(
                                                                                                                                                                                           y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
 
-
-
-
-##########
-
-#First Test for Activeness_C4
+#Test for Activeness_C4
 
 Data_for_Regression_C4 <- Data_C4_Full_OB[!is.na(Data_C4_Full_OB$GOP_B), ]
 
@@ -274,9 +262,7 @@ ggplot(Data_for_Regression_C4, aes(x = Activeness, y = GOP_B)) + geom_point(aes(
                                                                                                                                                                                           y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
 
-##########
-
-#First Test for Activeness_C5
+#Test for Activeness_C5
 
 Data_for_Regression_C5 <- Data_C5_Full_OB[!is.na(Data_C5_Full_OB$GOP_B), ]
 
@@ -297,9 +283,8 @@ ggplot(Data_for_Regression_C5, aes(x = Activeness, y = GOP_B)) + geom_point(aes(
 
 
 
-##########
 
-#First Test for Activeness_C6
+#Test for Activeness_C6
 
 Data_for_Regression_C6 <- Data_C6_Full_OB[!is.na(Data_C6_Full_OB$GOP_B), ]
 
@@ -319,9 +304,7 @@ ggplot(Data_for_Regression_C6, aes(x = Activeness, y = GOP_B)) + geom_point(aes(
                                                                                                                                                                                           y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
 
-##########
-
-#First Test for Activeness_C7
+#Test for Activeness_C7
 
 Data_for_Regression_C7 <- Data_C7_Full_OB[!is.na(Data_C7_Full_OB$GOP_B), ]
 
@@ -340,9 +323,8 @@ ggplot(Data_for_Regression_C7, aes(x = Activeness, y = GOP_B)) + geom_point(aes(
                                                                                                                                                                                           x = "Activeness",
                                                                                                                                                                                           y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
-##########
 
-#First Test for Activeness_C8
+#Test for Activeness_C8
 
 Data_for_Regression_C8 <- Data_C8_Full_OB[!is.na(Data_C8_Full_OB$GOP_B), ]
 
@@ -362,14 +344,7 @@ ggplot(Data_for_Regression_C8, aes(x = Activeness, y = GOP_B)) + geom_point(aes(
                                                                                                                                                                                           y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
 
-
-
-
-#############################################################################################
-
-
-
-#First Test for Flexible C1
+#Test for Flexible C1
 
 Data_for_Regression_C1 <- Data_C1_Full_OB[!is.na(Data_C1_Full_OB$GOP_B), ]
 
@@ -389,10 +364,7 @@ ggplot(Data_for_Regression_C1, aes(x = Flexible, y = GOP_B)) + geom_point(aes(co
                                                                                                                                                                                         x = "Flexible",
                                                                                                                                                                                         y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
-#############
-
-
-#First Test for Flexible C2
+#Test for Flexible C2
 
 Data_for_Regression_C2 <- Data_C2_Full_OB[!is.na(Data_C2_Full_OB$GOP_B), ]
 
@@ -412,12 +384,7 @@ ggplot(Data_for_Regression_C2, aes(x = Flexible, y = GOP_B)) + geom_point(aes(co
                                                                                                                                                                                         x = "Flexible",
                                                                                                                                                                                         y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
-
-
-#############
-
-
-#First Test for Flexible C3
+#Test for Flexible C3
 
 Data_for_Regression_C3 <- Data_C3_Full_OB[!is.na(Data_C3_Full_OB$GOP_B), ]
 
@@ -439,11 +406,7 @@ ggplot(Data_for_Regression_C3, aes(x = Flexible, y = GOP_B)) + geom_point(aes(co
 
 
 
-
-#############
-
-
-#First Test for Flexible C4
+#Test for Flexible C4
 
 Data_for_Regression_C4 <- Data_C4_Full_OB[!is.na(Data_C4_Full_OB$GOP_B), ]
 
@@ -465,8 +428,7 @@ ggplot(Data_for_Regression_C4, aes(x = Flexible, y = GOP_B)) + geom_point(aes(co
 
 
 
-
-#First Test for Flexible C5
+#Test for Flexible C5
 
 Data_for_Regression_C5 <- Data_C5_Full_OB[!is.na(Data_C5_Full_OB$GOP_B), ]
 
@@ -474,7 +436,6 @@ Data_for_Regression_C5 <- Data_C5_Full_OB[!is.na(Data_C5_Full_OB$GOP_B), ]
 
 model_Flexible_C5 <- glm(GOP_B ~ Flexible, data = Data_C5_Full_OB, family = binomial)
 summary(model_Flexible_C5)
-
 
 
 # Create a data frame with predictions
@@ -486,7 +447,7 @@ ggplot(Data_for_Regression_C5, aes(x = Flexible, y = GOP_B)) + geom_point(aes(co
                                                                                                                                                                                         x = "Flexible",
                                                                                                                                                                                         y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
-#First Test for Flexible C6
+#Test for Flexible C6
 
 Data_for_Regression_C6 <- Data_C6_Full_OB[!is.na(Data_C6_Full_OB$GOP_B), ]
 
@@ -506,7 +467,7 @@ ggplot(Data_for_Regression_C6, aes(x = Flexible, y = GOP_B)) + geom_point(aes(co
                                                                                                                                                                                         x = "Flexible",
                                                                                                                                                                                         y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
 
-#First Test for Flexible C7
+#Test for Flexible C7
 
 Data_for_Regression_C7 <- Data_C7_Full_OB[!is.na(Data_C7_Full_OB$GOP_B), ]
 
@@ -525,7 +486,7 @@ Data_for_Regression_C7$predicted_prob <- predict(model_Flexible_C7, type = "resp
 ggplot(Data_for_Regression_C7, aes(x = Flexible, y = GOP_B)) + geom_point(aes(color = factor(GOP_B)), size = 3) +  geom_line(aes(y = predicted_prob), color = "blue", size = 1) +  labs(title = "Logistic Regression of GOP on Flexible (C7_Full_OB)",
                                                                                                                                                                                         x = "Flexible",
                                                                                                                                                                                         y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()
-#First Test for Flexible C8
+#Test for Flexible C8
 
 Data_for_Regression_C8 <- Data_C8_Full_OB[!is.na(Data_C8_Full_OB$GOP_B), ]
 
@@ -547,14 +508,9 @@ ggplot(Data_for_Regression_C8, aes(x = Flexible, y = GOP_B)) + geom_point(aes(co
 
 
 
+                                                                                                                                                                                     
 
-
-
-
-
-#########################################                                                                                                                                                                                       
-
-#First Test for Aggression C1
+#Test for Aggression C1
 
 Data_for_Regression_C1 <- Data_C1_Full_OB[!is.na(Data_C1_Full_OB$GOP_B), ]
 
@@ -573,9 +529,9 @@ Data_for_Regression_C1$predicted_prob <- predict(model_Aggression_C1, type = "re
 ggplot(Data_for_Regression_C1, aes(x = Aggression, y = GOP_B)) + geom_point(aes(color = factor(GOP_B)), size = 3) +  geom_line(aes(y = predicted_prob), color = "blue", size = 1) +  labs(title = "Logistic Regression of GOP on Aggression (C1_Full_OB)",
                                                                                                                                                                                           x = "Aggression",
                                                                                                                                                                                           y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()                                       
-#
 
-#First Test for Aggression C2
+
+#Test for Aggression C2
 
 Data_for_Regression_C2 <- Data_C2_Full_OB[!is.na(Data_C2_Full_OB$GOP_B), ]
 
@@ -594,7 +550,7 @@ Data_for_Regression_C2$predicted_prob <- predict(model_Aggression_C2, type = "re
 ggplot(Data_for_Regression_C2, aes(x = Aggression, y = GOP_B)) + geom_point(aes(color = factor(GOP_B)), size = 3) +  geom_line(aes(y = predicted_prob), color = "blue", size = 1) +  labs(title = "Logistic Regression of GOP on Aggression (C2_Full_OB)",
                                                                                                                                                                                           x = "Aggression",
                                                                                                                                                                                           y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()                                       
-#First Test for Aggression C3
+#Test for Aggression C3
 
 Data_for_Regression_C3 <- Data_C3_Full_OB[!is.na(Data_C3_Full_OB$GOP_B), ]
 
@@ -615,7 +571,7 @@ ggplot(Data_for_Regression_C3, aes(x = Aggression, y = GOP_B)) + geom_point(aes(
                                                                                                                                                                                           y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()                                                                                                                                                                                                                       
 
 
-#First Test for Aggression C4
+#Test for Aggression C4
 
 Data_for_Regression_C4 <- Data_C4_Full_OB[!is.na(Data_C4_Full_OB$GOP_B), ]
 
@@ -635,7 +591,7 @@ ggplot(Data_for_Regression_C4, aes(x = Aggression, y = GOP_B)) + geom_point(aes(
                                                                                                                                                                                           x = "Aggression",
                                                                                                                                                                                           y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()                                       
 
-#First Test for Aggression C5
+#Test for Aggression C5
 
 Data_for_Regression_C5 <- Data_C5_Full_OB[!is.na(Data_C5_Full_OB$GOP_B), ]
 
@@ -655,7 +611,7 @@ ggplot(Data_for_Regression_C5, aes(x = Aggression, y = GOP_B)) + geom_point(aes(
                                                                                                                                                                                           x = "Aggression",
                                                                                                                                                                                           y = "Probability of GOP") + scale_color_discrete(name = "GOP") + theme_minimal()                                       
 
-#First Test for Aggression C6
+#Test for Aggression C6
 
 Data_for_Regression_C6 <- Data_C6_Full_OB[!is.na(Data_C6_Full_OB$GOP_B), ]
 
@@ -677,7 +633,7 @@ ggplot(Data_for_Regression_C6, aes(x = Aggression, y = GOP_B)) + geom_point(aes(
 
 
 
-#First Test for Aggression C7
+#Test for Aggression C7
 
 Data_for_Regression_C7 <- Data_C7_Full_OB[!is.na(Data_C7_Full_OB$GOP_B), ]
 
@@ -700,9 +656,7 @@ ggplot(Data_for_Regression_C7, aes(x = Aggression, y = GOP_B)) + geom_point(aes(
 
 
 
-
-
-#First Test for Aggression C8
+#Test for Aggression C8
 
 Data_for_Regression_C8 <- Data_C8_Full_OB[!is.na(Data_C8_Full_OB$GOP_B), ]
 
@@ -726,11 +680,6 @@ ggplot(Data_for_Regression_C8, aes(x = Aggression, y = GOP_B)) + geom_point(aes(
 dev.off()
 
 
-#############################################################################################
-
-################################Section :Clean Up ###########################################
-
-#############################################################################################
 
 
 sink("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Summaries\\Split 4\\model_summaries_Split_4_Full_OB.txt")
