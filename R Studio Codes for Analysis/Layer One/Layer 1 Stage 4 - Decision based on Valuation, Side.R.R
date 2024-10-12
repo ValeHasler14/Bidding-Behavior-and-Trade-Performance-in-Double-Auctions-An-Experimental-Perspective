@@ -1,6 +1,6 @@
 #This code solely creates the data sets. 
 
-#As these Codes have been created the naming of the Categories(Later Group) are as follows:
+#As these Codes have been created before the naming of the Categories (Later named as Groups) are as follows:
 
 #C1 == Seller Bad
 #C2 == Seller Medium Low
@@ -14,7 +14,7 @@
 
 #Reading the Data set
 
-Data <- read.csv("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Data Set\\Bachelorarbeit\\Data.csv")
+Data <- read.csv("path")
 
 #Download the necessary libraries
 
@@ -27,7 +27,7 @@ library(tidyverse)
 
 #creation of a PDF, containing the generated plots
 
-pdf("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Plots PDF\\Plots_SPlit_3.pdf")
+pdf("path")
 
 #Adding Gain of Profit as a Column
 
@@ -1495,7 +1495,7 @@ dev.off()
 
 
 
-sink("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Summaries\\model_summaries_Split_3.txt")
+sink("path")
 
 
 summary(model_Flexible_C1)
