@@ -2,7 +2,7 @@
 
 #Adding Gain of Profit as a Column
 
-Data <- read.csv("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Data Set\\Bachelorarbeit\\Data.csv")
+Data <- read.csv("path")
 
 Data <- Data %>%
   mutate(GOP = ifelse(!is.na(price), abs(bid - valuation), NA))
@@ -12,7 +12,7 @@ library(tidyverse)
 
 hist(Data$GOP)
 
-pdf("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Plots PDF\\Plots_SPlit_1.pdf")
+pdf("path")
 
 
 
@@ -258,7 +258,7 @@ Data <- Data %>% relocate(Match_price,.after = match_time)
 
 dev.off()
 
-sink("C:\\Users\\info\\OneDrive\\Valentin\\Uni\\BA\\Summaries\\model_summaries_Split_1.txt")
+sink("path")
 summary(model_Activeness)
 summary(model_Aggression)
 summary(model_Flexible)
